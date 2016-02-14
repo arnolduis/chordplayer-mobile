@@ -1,4 +1,4 @@
-<Page xmlns="http://www.nativescript.org/tns.xsd" xmlns:Card="nativescript-cardview" loaded="onLoaded" navigatedTo="onNavigatedTo">
+<Page xmlns="http://www.nativescript.org/tns.xsd" xmlns:Card="nativescript-cardview" loaded="onLoaded" swipe="onItemSwipe" navigatedTo="onNavigatedTo">
 	<Page.actionBar>
 		<ActionBar title="{{ title }}"/>
 	</Page.actionBar>

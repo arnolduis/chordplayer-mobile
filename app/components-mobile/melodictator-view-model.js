@@ -1,5 +1,7 @@
 var observable = require("data/observable");
-var melodictator = require("~/melodictatorModule");
+var sampler = require("../javascripts/sampler-mobile")();
+var melodictator = require("../javascripts/melodictator")(sampler);
+
 
 var MelodictatorModel = (function (_super) {
 	__extends(MelodictatorModel, _super);
@@ -19,7 +21,6 @@ var MelodictatorModel = (function (_super) {
 
 		this.states = [self.stepPlay, self.stepShow];
 		this.actState = this.states.length - 1;
-
 	}
 
 	MelodictatorModel.prototype.step = function (args) {

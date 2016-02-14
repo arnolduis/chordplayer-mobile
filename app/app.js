@@ -1,8 +1,7 @@
 var application = require("application");
 
 var liveedit = require('nativescript-liveedit');
-liveedit.restartFile("./app.css");
 
-application.mainModule = "melodictator";
-application.cssFile = "./app.css";
+application.mainModule = "./components-mobile/melodictator-page";
+application.cssFile = "./stylesheets/mobile.css";
 application.start();

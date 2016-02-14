@@ -4,6 +4,7 @@
 	text-align: center;
 	margin: 50 auto 10 auto;
 }
+
 .chord {
 	display: inline-block;
 	zoom: 1; /* Trigger hasLayout */
