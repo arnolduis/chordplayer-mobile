@@ -1,0 +1,5 @@
+watcher*
+node_modules
+platforms
+app/App_Resources
+app/samples/*

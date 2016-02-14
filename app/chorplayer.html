@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chordplayer</title>
+	<link rel="stylesheet" href="stylesheets/main.css">
+</head>
+<body>
+	<div id="chordName">
+		Chord
+	</div>
+	<div class="btn big" tabindex="0" id="btnRepeat">
+		REPEAT
+	</div>
+	<div id="chord-container"></div>
+	<div class="btn big" tabindex="0" id="btnNext">
+		NEXT
+	</div>
+	<div class="btn big" tabindex="0" id="btnCadence">
+		Cadence
+	</div>
+	<select multiple id="sctInstruments">
+	</select>
+	<input type="range" id="rngVolume" value="60">
+	<select id="sctScale">
+		<option value="C"> C  &ensp;/ a</option>
+		<option value="C#">C# 		/ a#</option>
+		<option value="D"> D  &ensp;/ b</option>
+		<option value="D#">D# 		/ c</option>
+		<option value="E"> E  &ensp;/ c#</option>
+		<option value="F"> F  &ensp;/ d</option>
+		<option value="F#">F# 		/ d#</option>
+		<option value="G"> G  &ensp;/ e</option>
+		<option value="G#">G# 		/ f</option>
+		<option value="A"> A  &ensp;/ f#</option>
+		<option value="A#">A# 		/ g</option>
+		<option value="B"> B  &ensp;/ g#</option>
+	</select>
+	<button id="btnInitExercise">
+		Create Exercise
+	</button>
+	<span style="font-size: x-small">Just play</span ><input type="checkbox" id="chordtableplay" name="chordtableplay">
+<!-- 	<button id="btsaveExercise">
+		Save Exercise
+	</button> -->
+	<div class="chordtableContainer">
+		<table id="chordtable"></table>
+	</div>
+
+	<script src="./javascripts/chordplayerBundle.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>

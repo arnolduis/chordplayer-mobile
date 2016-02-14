@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Melodictator</title>
+	<link rel="stylesheet" href="stylesheets/main.css">
+
+</head>
+<body>
+
+	<div id="lblMelody">
+		Melody solmization
+	</div>
+	<div class="btn big" tabindex="0" id="btnNext">
+		NEXT
+	</div>
+	<div class="btn big" tabindex="0" id="btnRepeat">
+		REPEAT
+	</div>
+	<div class="btn big" tabindex="0" id="btnCadence">
+		Cadence
+	</div>
+	<div class="btn big" tabindex="0" id="btnStop">
+		STOP
+	</div>
+	<div>
+		<label for="melodyLength">Melody length:</label> 
+		<input id="melodyLength" type="number" value="4"></input>
+	</div>
+	<div>
+		<label for="melodySpeed">Melody speed(ms):</label> 
+		<input id="melodySpeed" type="number" value="1000"></input>
+	</div>
+	<div>
+		<label for="maxInterval">Max interval:</label> 
+		<input id="maxInterval" type="number" value="3"></input>
+	</div>
+	
+	<script src="./javascripts/melodictatorBundle.js" type="text/javascript" charset="utf-8" async defer></script>
+
+</body>
+</html>

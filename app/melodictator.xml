@@ -1,0 +1,31 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" xmlns:Card="nativescript-cardview" loaded="onLoaded" navigatedTo="onNavigatedTo">
+	<Page.actionBar>
+		<ActionBar title="{{ title }}"/>
+	</Page.actionBar>
+	<ScrollView>
+		<StackLayout>
+			<Label  text="{{ lblMelody }}" textWrap="true" class="message" />
+			
+			<!-- <Card:CardView margin="10" elevation="20" radius="70" > -->
+				<Button class="btn big" text="{{ lblBtnNext }}" tap="{{ step }}" />
+			<!-- </Card:CardView> -->
+
+			<!-- <Card:CardView margin="10" elevation="20" radius="70"> -->
+				<Button class="btn big" text="REPEAT"  tap="{{ repeat }}" />
+			<!-- </Card:CardView> -->
+			
+			<!-- <Card:CardView margin="10" elevation="20" radius="70"> -->
+				<Button class="btn big" text="Cadence" tap="{{ playCadence }}" />
+			<!-- </Card:CardView> -->
+		
+			<!-- <Card:CardView margin="10" elevation="20" radius="70"> -->
+				<Button class="btn big" text="STOP"    tap="{{ stop }}" />
+			<!-- </Card:CardView>	 --> 
+
+			<TextField hint="Number of notes"   keyboardType="number" text="{{ melodyLength }}" />
+			<TextField hint="Melody speed (ms)" keyboardType="number" text="{{ melodySpeed }}" />
+			<TextField hint="Max interval"      keyboardType="number" text="{{ maxInterval }}" />
+			
+		</StackLayout>  
+	</ScrollView>
+</Page>

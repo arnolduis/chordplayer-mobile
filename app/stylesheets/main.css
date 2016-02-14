@@ -1,0 +1,94 @@
+body {
+	font-family: Arial;
+	font-size: 34px;
+	text-align: center;
+	margin: 50px auto 10px auto;
+}
+.chord {
+	display: inline-block;
+	zoom: 1; /* Trigger hasLayout */
+	width: 15%;
+	text-align: center;
+	margin: 5px 1px;
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	white-space: normal;
+}
+.external {
+	border: 2px solid red;
+}
+
+.message {
+    font-size: 20;
+    color: #284848;
+    horizontal-align: center;
+}
+
+.big {
+	margin: 15px 40px;
+	border-radius: 28px;
+	/*-webkit-border-radius: 28;*/
+	/*-moz-border-radius: 28;*/
+}
+.btn {
+	font-size: 20;
+	cursor: pointer;
+	background-color: #3498db;
+	background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+	background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+	background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+	background-image: -o-linear-gradient(top, #3498db, #2980b9);
+	background-image: linear-gradient(to bottom, #3498db, #2980b9);
+	color: #ffffff;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+}
+
+.btn:hover {
+	background-color: #3cb0fd;
+	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	text-decoration: none;
+}
+.btn:pressed {
+	background-color: #3cb0fd;
+	background-image: -webkit-linear-gradient(top, #3498db, #3cb0fd);
+	background-image: -moz-linear-gradient(top, #3498db, #3cb0fd);
+	background-image: -ms-linear-gradient(top, #3498db, #3cb0fd);
+	background-image: -o-linear-gradient(top, #3498db, #3cb0fd);
+	background-image: linear-gradient(to bottom, #3498db, #3cb0fd);
+	text-decoration: none;
+}
+table {
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	border-collapse: collapse;
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+table, th, td {
+	font-size: large;
+	border: 1px solid black;
+}
+
+tbody td {
+	/*padding: 5px 0px 5px 0px;*/
+	cursor: pointer;	
+}
+
+#chordtable, .chordtableContainer {
+	height: 80%;
+}
